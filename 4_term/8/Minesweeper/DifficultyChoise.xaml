@@ -1,0 +1,18 @@
+﻿<Window x:Class="Minesweeper.DifficultyChoise"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Minesweeper"
+        mc:Ignorable="d"
+        Title="САПЕР (Лабораторная №8)" Height="350" Width="400" Background="BlanchedAlmond" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="ПРИВЕТСТВУЮ В ИГРЕ 'САПЕР'!" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Width="196" FontFamily="Times New Roman" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="ВЫБЕРИТЕ УРОВЕНЬ СЛОЖНОСТИ:" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" Width="216" FontFamily="Times New Roman" FontSize="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="EasyDifficulty" Content="ЛЁГКИЙ" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" Background="SpringGreen" Width="150" Height="30" FontStyle="Italic" FontSize="14" Click="EasyDifficulty_Click"/>
+        <Button x:Name="MediumDifficulty" Content="СРЕДНИЙ" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Background="Orange" Width="150" Height="30" FontStyle="Italic" FontSize="14" Click="MediumDifficulty_Click"/>
+        <Button x:Name="HardDifficulty" Content="ТЯЖЕЛЫЙ" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" Background="Red" Width="150" Height="30" FontStyle="Italic" FontSize="14" Click="HardDifficulty_Click"/>
+        <Button x:Name="Play" Content="НАЧАТЬ ИГРУ" HorizontalAlignment="Center" Margin="0,202,0,0" VerticalAlignment="Top" Background="CadetBlue" Width="150" Height="30" FontStyle="Italic" FontSize="14" IsEnabled="False" Click="Play_Click"/>
+        <Button x:Name="Records" Content="ТАБЛИЦА ЛИДЕРОВ" HorizontalAlignment="Center" Margin="0,237,0,0" VerticalAlignment="Top" Background="CadetBlue" Width="150" Height="30" FontStyle="Italic" FontSize="14" Click="Records_Click"/>
+    </Grid>
+</Window>

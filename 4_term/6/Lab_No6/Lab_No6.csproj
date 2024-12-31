@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\pause-button.png" />
+    <None Remove="Icons\play-button.png" />
+    <None Remove="Icons\play-next-prev-button.png" />
+    <None Remove="Icons\play-repeat-button.png" />
+    <None Remove="Icons\play-shuffle-button.png" />
+    <None Remove="Icons\volume-slider.png" />
+    <None Remove="Images\app-background.png" />
+    <None Remove="Images\default-album-cover.jpeg" />
+    <None Remove="music\Alpha Wolf - Spirit Breaker %28OFFICIAL AUDIO STREAM%29 %28320%29.mp3" />
+    <None Remove="music\Perturbator - Future Club [Dangerous Days Premiere - 2014] %28320%29.mp3" />
+    <None Remove="music\the sisters of mercy - this corrosion %28slowed &amp; reverb%29.mp3" />
+    <None Remove="music\type o negative - black no. 1 %28slowed &amp; reverb%29.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="taglib-sharp-netstandard2.0" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\pause-button.png" />
+    <Resource Include="Icons\play-button.png" />
+    <Resource Include="Icons\play-next-prev-button.png" />
+    <Resource Include="Icons\play-repeat-button.png" />
+    <Resource Include="Icons\play-shuffle-button.png" />
+    <Resource Include="Icons\volume-slider.png" />
+    <Resource Include="Images\app-background.png" />
+    <Resource Include="Images\default-album-cover.jpeg" />
+    <Resource Include="music\Alpha Wolf - Spirit Breaker (OFFICIAL AUDIO STREAM) (320).mp3" />
+    <Resource Include="music\the sisters of mercy - this corrosion (slowed &amp; reverb).mp3" />
+    <Resource Include="music\type o negative - black no. 1 (slowed &amp; reverb).mp3" />
+  </ItemGroup>
+
+</Project>

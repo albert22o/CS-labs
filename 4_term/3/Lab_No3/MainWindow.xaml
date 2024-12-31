@@ -1,0 +1,39 @@
+﻿<Window x:Class="Lab_No3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Лабораторная №3" Height="560" Width="400" IsEnabledChanged="Window_IsEnabledChanged">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Файл" FontSize="16">
+                <StackPanel>
+                    <ListBox ItemsSource="{Binding ElementName=TimersList, Path=ItemsSource}" Width="370" Height="200" KeyDown="TimersList_KeyDown" Margin="0,0,0,10"/>
+                    <ListBox Width="120" Height="110">
+                    <ListBoxItem Name="DHMS" Content="Д/Ч/М/С" Selected="FormatType_Selected"/>
+                        <ListBoxItem Name="HMS" Content="Ч/М/С" Selected="FormatType_Selected"/>
+                        <ListBoxItem Name="MS" Content="М/С" Selected="FormatType_Selected"/>
+                        <ListBoxItem Name="S" Content="С" Selected="FormatType_Selected"/>
+                    </ListBox>
+                    <Button x:Name="LoadTimersList" Content="Загрузить" Width="270" Height="50" Margin="0,20,0,10" Click="LoadTimersList_Click"/>
+                    <Button x:Name="SaveTimersList" Content="Сохранить" Width="270" Height="50" Click="SaveTimersList_Click"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Таймеры" FontSize="16">
+                <StackPanel>
+                    <ListBox Name="TimersList" Width="370" Height="200" KeyDown="TimersList_KeyDown" Margin="0,0,0,10"/>
+                    <ListBox Width="120" Height="110">
+                        <ListBoxItem Name="DHMS_1" Content="Д/Ч/М/С" Selected="FormatType_Selected"/>
+                        <ListBoxItem Name="HMS_1" Content="Ч/М/С" Selected="FormatType_Selected"/>
+                        <ListBoxItem Name="MS_1" Content="М/С" Selected="FormatType_Selected"/>
+                        <ListBoxItem Name="S_1" Content="С" Selected="FormatType_Selected"/>
+                    </ListBox>
+                    <Button Name="AddTimerButton" Content="Добавить" Width="270" Height="40" Margin="30, 10, 30, 10" Click="AddTimerButton_Click"/>
+                    <Button Name="EditTimerButton" Content="Изменить" Width="270" Height="40" Margin="30, 0, 30, 10" Click="EditTimerButton_Click"/>
+                    <Button Name="DeleteTimerButton" Content="Удалить" Width="270" Height="40" Margin="30, 0, 30, 10" Click="DeleteTimerButton_Click"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

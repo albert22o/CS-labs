@@ -1,0 +1,21 @@
+﻿<Window x:Class="TaskNo1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskNo1"
+        mc:Ignorable="d"
+        Title="Задание №1" Height="250" Width="400">
+    <Grid>
+        <TextBox Name="FirstNumber" HorizontalAlignment="Left" Margin="35,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="30"/>
+        <TextBox Name="SecondNumber" HorizontalAlignment="Left" Margin="35,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="30"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="11,154,0,0" VerticalAlignment="Top"/>
+        <Button Name="AddButton" Content="+" HorizontalAlignment="Left" Margin="35,87,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="AddButton_Click"/>
+        <Button Name="SubButton" Content="-" HorizontalAlignment="Left" Margin="70,87,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="SubButton_Click"/>
+        <Button Name="MulButton" Content="*" HorizontalAlignment="Left" Margin="105,87,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="MulButton_Click"/>
+        <Button Name="DivButton" Content="/" HorizontalAlignment="Left" Margin="140,87,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="DivButton_Click"/>
+        <Label Content="=" HorizontalAlignment="Left" Margin="206,89,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="ResultNumber" HorizontalAlignment="Left" Margin="230,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="30" IsEnabled="False"/>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icons\minesweeper-ico.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons\clicking-smile.png" />
+    <None Remove="icons\default-smile.png" />
+    <None Remove="icons\flag.png" />
+    <None Remove="icons\losing-smile.png" />
+    <None Remove="icons\mine.png" />
+    <None Remove="icons\victory-smile.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icons\minesweeper-ico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons\clicking-smile.png" />
+    <Resource Include="icons\default-smile.png" />
+    <Resource Include="icons\flag.png" />
+    <Resource Include="icons\losing-smile.png" />
+    <Resource Include="icons\mine.png" />
+    <Resource Include="icons\victory-smile.png" />
+  </ItemGroup>
+
+</Project>

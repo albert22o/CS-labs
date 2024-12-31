@@ -1,0 +1,13 @@
+﻿<Window x:Class="TaskNo3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskNo3"
+        mc:Ignorable="d"
+        Title="Задание №3" Height="250" Width="600">
+    <Grid>
+        <ListBox Name="PlanetsList" d:ItemsSource="{d:SampleData ItemCount=8}" Margin="10,48,444,48" SelectionChanged="PlanetsList_SelectionChanged"/>
+        <TextBox Name="PlanetDescription" HorizontalAlignment="Left" Margin="180,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="410" Height="192"/>
+    </Grid>
+</Window>

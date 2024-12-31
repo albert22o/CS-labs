@@ -1,0 +1,17 @@
+﻿<Window x:Class="Minesweeper.Records"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="САПЕР (Лабораторная №8): Таблица рекордов" Height="450" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="RecordsDataGrid" AutoGenerateColumns="False" Margin="5" CanUserAddRows="False" HeadersVisibility="Column" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="#" Binding="{Binding Counter}" Width="30"/>
+                <DataGridTextColumn Header="Никнейм игрока" Binding="{Binding PlayerName}" Width="*"/>
+                <DataGridTextColumn Header="Очки" Binding="{Binding Scores}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

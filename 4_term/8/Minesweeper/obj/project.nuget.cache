@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "TgufRshC3lMfOw3GRGV3o7ykUcu+Q0L7wOecDnCUO/y6qUmbBGuuFv2Tmldy6sZquFoJhwdIHnGzVnujH05J3A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nekitt\\Documents\\УЧЕБА\\ПиОГИ\\Minesweeper\\Minesweeper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nekitt\\.nuget\\packages\\microsoft.data.sqlite\\8.0.5\\microsoft.data.sqlite.8.0.5.nupkg.sha512",
+    "C:\\Users\\Nekitt\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.5\\microsoft.data.sqlite.core.8.0.5.nupkg.sha512",
+    "C:\\Users\\Nekitt\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\Nekitt\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\Nekitt\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\Nekitt\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\Nekitt\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

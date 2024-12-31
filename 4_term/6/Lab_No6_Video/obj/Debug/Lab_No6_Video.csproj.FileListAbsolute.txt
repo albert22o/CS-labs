@@ -1,0 +1,15 @@
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video.csproj.AssemblyReference.cache
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\MainWindow.baml
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\MainWindow.g.cs
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\App.g.cs
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video_MarkupCompile.cache
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video.g.resources
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video.Properties.Resources.resources
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video.csproj.GenerateResource.cache
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video.csproj.CoreCompileInputs.cache
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\bin\Debug\Lab_No6_Video.exe.config
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\bin\Debug\Lab_No6_Video.exe
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\bin\Debug\Lab_No6_Video.pdb
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video.exe
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video.pdb
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No6_Video\obj\Debug\Lab_No6_Video_Content.g.cs

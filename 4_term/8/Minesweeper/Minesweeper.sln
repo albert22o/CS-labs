@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "Minesweeper.csproj", "{FBCE4C86-4A6D-4B35-899B-76291EDC2BDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBCE4C86-4A6D-4B35-899B-76291EDC2BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCE4C86-4A6D-4B35-899B-76291EDC2BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCE4C86-4A6D-4B35-899B-76291EDC2BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCE4C86-4A6D-4B35-899B-76291EDC2BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0AB3CC4-2728-4B8F-B365-36B8993CB396}
+	EndGlobalSection
+EndGlobal

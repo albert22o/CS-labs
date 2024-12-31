@@ -1,0 +1,68 @@
+﻿<Window x:Class="Lab_No6.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d"
+		Title="SOUNDRIVE (Лабораторная №6)" Height="700" Width="1000" Background="#290059" ResizeMode="NoResize" Closed="Window_Closed" WindowStartupLocation="CenterScreen">
+	<Grid OpacityMask="#FFFF4949">
+		<Image Source="Images\app-background.png" Width="600" Height="600" Margin="451,84,-51,0"/>
+        <Label x:Name="TrackLabel" Content="TrackName" HorizontalAlignment="Left" Margin="20,371,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" Foreground="White"/>
+        <Label x:Name="ArtistLabel" Content="ArtistName" HorizontalAlignment="Left" Margin="20,413,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontSize="20" FontStyle="Normal" Foreground="LightGray"/>
+		<Slider x:Name="TrackChronometrage" HorizontalAlignment="Left" Margin="21,485,0,0" VerticalAlignment="Top" Width="350" Minimum="0" Value="0" ValueChanged="TrackChronometrage_ValueChanged" Thumb.DragCompleted="TrackChronometrage_DragCompleted"/>
+		<Button x:Name="PlayStopTrack" HorizontalAlignment="Left" Margin="161,508,0,0" VerticalAlignment="Top" Width="70" Height="70" Background="DodgerBlue" Click="PlayStopTrack_Click">
+			<Image Source="Icons\play-button.png"/>
+			<Button.Resources>
+				<Style TargetType="Border">
+					<Setter Property="CornerRadius" Value="35"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="PlayPrevTrack" HorizontalAlignment="Left" Margin="106,518,0,0" BorderBrush="Black" BorderThickness="2" VerticalAlignment="Top" Width="50" Height="50" Background="DodgerBlue" Click="PlayPrevTrack_Click">
+			<Image Source="Icons\play-next-prev-button.png">
+				<Image.LayoutTransform>
+					<RotateTransform Angle="180"/>
+				</Image.LayoutTransform>
+			</Image>
+		</Button>
+		<Button x:Name="PlayNextTrack" HorizontalAlignment="Left" Margin="236,518,0,0" BorderBrush="Black" BorderThickness="2" VerticalAlignment="Top" Width="50" Height="50" Background="DodgerBlue" Click="PlayNextTrack_Click">
+			<Image Source="Icons\play-next-prev-button.png"/>
+		</Button>
+		<Button x:Name="PlayShuffleTracks" HorizontalAlignment="Left" Margin="20,518,0,0" BorderBrush="Black" BorderThickness="2" VerticalAlignment="Top" Width="50" Height="50" Background="DodgerBlue" Click="PlayShuffleTracks_Click">
+			<Image Source="Icons\play-shuffle-button.png"/>
+			<Button.Resources>
+				<Style TargetType="Border">
+					<Setter Property="CornerRadius" Value="20"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="PlayRepeatTrack" HorizontalAlignment="Left" Margin="321,518,0,0" BorderBrush="Black" BorderThickness="2" VerticalAlignment="Top" Width="50" Height="50" Background="DodgerBlue" Click="PlayRepeatTrack_Click">
+			<Image Source="Icons\play-repeat-button.png"/>
+			<Button.Resources>
+				<Style TargetType="Border">
+					<Setter Property="CornerRadius" Value="20"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Label x:Name="CurrentTrackPosition" Content="00:00" HorizontalAlignment="Left" Margin="20,454,0,0" VerticalAlignment="Top" Foreground="Azure" FontSize="16"/>
+		<Label x:Name="TotalTrackLength" Content="--:--" HorizontalAlignment="Left" Margin="327,454,0,0" VerticalAlignment="Top" Foreground="Azure" FontSize="16"/>
+		<Label Content="PLAYLIST" HorizontalAlignment="Left" Margin="450,0,0,0" VerticalAlignment="Top" FontFamily="MV Boli" FontSize="48" FontStyle="Italic" Foreground="Azure"/>
+		<ListBox x:Name="TrackList" Margin="450,80,30,91" SelectionChanged="TrackList_SelectionChanged">
+			<ListBox.Background>
+				<SolidColorBrush Opacity="0.70" Color="DimGray"/>
+			</ListBox.Background>
+		</ListBox>
+		<Button x:Name="LoadPlaylist" Content="ЗАГРУЗИТЬ ПЛЕЙЛИСТ" HorizontalAlignment="Left" Margin="500,607,0,0" VerticalAlignment="Top" Width="220" Height="40" FontSize="16" FontFamily="Georgia" FontStyle="Italic" Background="LightSkyBlue" Click="LoadPlaylist_Click"/>
+		<Button x:Name="AddTrackToPlaylist" Content="ДОБАВИТЬ ТРЕК" HorizontalAlignment="Left" Margin="750,607,0,0" VerticalAlignment="Top" Width="220" Height="40" FontSize="16" FontFamily="Georgia" FontStyle="Italic" Background="LightSkyBlue" Click="AddTrackToPlaylist_Click"/>
+		<Image Source="Icons\volume-slider.png" Margin="0,550,880,0" Width="40" Height="40" Stretch="Fill"/>
+		<Slider x:Name="VolumeRegulator" HorizontalAlignment="Left" Margin="84,595,0,0" VerticalAlignment="Top" Width="220" Minimum="0" Maximum="100" Value="100" TickPlacement="BottomRight" TickFrequency="5" ValueChanged="VolumeRegulator_ValueChanged"/>
+		<Button x:Name="ResetTrack" HorizontalAlignment="Left" Margin="326,584,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="Black" BorderThickness="2" FontSize="16" FontFamily="Georgia" FontStyle="Italic" Background="DodgerBlue" Click="ResetTrack_Click">
+			<Button.Content>
+				<Rectangle Width="20" Height="20" Fill="Black">
+				</Rectangle>
+			</Button.Content>
+		</Button>
+		<Image x:Name="AlbumCoverView" Source="Images/default-album-cover.jpeg" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="340" Height="340" Stretch="Fill"/>
+		<Label x:Name="AlbumName" HorizontalAlignment="Left" Margin="20,335,0,0" VerticalAlignment="Top" Width="340" Height="25" Panel.ZIndex="1" Background="#995D5D5D" Foreground="White" VerticalContentAlignment="Top" FontSize="14"/>
+	</Grid>
+</Window>

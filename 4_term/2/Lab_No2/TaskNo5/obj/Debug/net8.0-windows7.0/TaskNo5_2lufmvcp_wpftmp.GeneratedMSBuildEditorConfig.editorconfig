@@ -1,0 +1,13 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows7.0
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TaskNo5_2lufmvcp_wpftmp
+build_property.ProjectDir = C:\Users\Nekitt\Downloads\Lab_No2-20240215T152417Z-001\Lab_No2\TaskNo5\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

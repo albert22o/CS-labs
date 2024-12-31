@@ -1,0 +1,17 @@
+﻿<Window x:Class="Lab_No5_Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Лабораторная №5: Клиент" Height="300" Width="500">
+    <Grid>
+        <Label Content="Имя пользователя:" HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="UserNameField" HorizontalAlignment="Left" Margin="150,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="300"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MessageField" Margin="150,80,50,133"/>
+        <Button x:Name="SendMessage" Content="Отправить" HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="SendMessage_Click"/>
+        <Label Content="Ответ сервера:" HorizontalAlignment="Left" Margin="20,227,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ServerResponse" HorizontalAlignment="Left" Margin="150,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="300"/>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="TaskNo5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskNo5"
+        mc:Ignorable="d"
+        Title="Задание №5" Height="250" Width="400">
+    <Grid>
+        <TextBox Name="TimerMemory" HorizontalAlignment="Left" Height="215" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="190"/>
+        <Label Name="CurrentTimer" Content="0:00:00" FontSize="24" HorizontalAlignment="Left" Margin="220,25,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="TimeFormatting" HorizontalAlignment="Left" Margin="339,38,0,0" VerticalAlignment="Top"/>
+        <Button Name="TimerStart" Content="Старт" HorizontalAlignment="Left" Margin="250,86,0,0" VerticalAlignment="Top" Height="31" Width="105" Click="TimerStart_Click"/>
+        <Button Name="TimerRemember" Content="Запомнить" HorizontalAlignment="Left" Margin="250,122,0,0" VerticalAlignment="Top" Height="31" Width="105" Click="TimerRemember_Click"/>
+        <Button Name="TimerReset" Content="Стоп" HorizontalAlignment="Left" Margin="250,158,0,0" VerticalAlignment="Top" Height="31" Width="105" Click="TimerReset_Click"/>
+    </Grid>
+</Window>

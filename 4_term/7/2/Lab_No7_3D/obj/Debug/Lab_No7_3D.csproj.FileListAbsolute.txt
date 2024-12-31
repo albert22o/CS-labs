@@ -1,0 +1,14 @@
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\bin\Debug\Lab_No7_3D.exe.config
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\bin\Debug\Lab_No7_3D.exe
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\bin\Debug\Lab_No7_3D.pdb
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\Lab_No7_3D.csproj.AssemblyReference.cache
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\MainWindow.baml
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\MainWindow.g.cs
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\App.g.cs
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\Lab_No7_3D_MarkupCompile.cache
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\Lab_No7_3D.g.resources
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\Lab_No7_3D.Properties.Resources.resources
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\Lab_No7_3D.csproj.GenerateResource.cache
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\Lab_No7_3D.csproj.CoreCompileInputs.cache
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\Lab_No7_3D.exe
+C:\Users\Nekitt\Documents\УЧЕБА\ПиОГИ\Lab_No7_3D\obj\Debug\Lab_No7_3D.pdb

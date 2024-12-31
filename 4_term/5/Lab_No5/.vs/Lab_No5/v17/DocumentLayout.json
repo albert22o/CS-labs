@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F0027A5-CC2B-4A32-BA4A-7AE01914515E}|Lab_No5_Server\\Lab_No5_Server.csproj|c:\\users\\nekitt\\documents\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0438\u043E\u0433\u0438\\lab_no5\\lab_no5_server\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F0027A5-CC2B-4A32-BA4A-7AE01914515E}|Lab_No5_Server\\Lab_No5_Server.csproj|solutionrelative:lab_no5_server\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8BE81B-E7D6-415B-983D-508C32196A22}|Lab_No5_Client\\Lab_No5_Client.csproj|C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\lab_no5_client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8BE81B-E7D6-415B-983D-508C32196A22}|Lab_No5_Client\\Lab_No5_Client.csproj|solutionrelative:lab_no5_client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F0027A5-CC2B-4A32-BA4A-7AE01914515E}|Lab_No5_Server\\Lab_No5_Server.csproj|C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\lab_no5_server\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0F0027A5-CC2B-4A32-BA4A-7AE01914515E}|Lab_No5_Server\\Lab_No5_Server.csproj|solutionrelative:lab_no5_server\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\Lab_No5_Client\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Lab_No5_Client\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\Lab_No5_Client\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Lab_No5_Client\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwC4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T16:31:18.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\Lab_No5_Server\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Lab_No5_Server\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\Lab_No5_Server\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Lab_No5_Server\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T18:20:52.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\Lab_No5_Server\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Lab_No5_Server\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Nekitt\\Documents\\\u0423\u0427\u0415\u0411\u0410\\\u041F\u0438\u041E\u0413\u0418\\Lab_No5\\Lab_No5_Server\\MainWindow.xaml",
+              "RelativeToolTip": "Lab_No5_Server\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-05T18:20:52.488Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
