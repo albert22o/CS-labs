@@ -23,8 +23,8 @@ namespace TaskNo2
 
         private void AddString_Click(object sender, RoutedEventArgs e)
         {
-            SummaryText.AppendText(InputText.Text + '\n');
-            InputText.Text = string.Empty;
+            SummaryText.AppendText(InputText.Text + '\n'); // Добавление строки к нижнему текстовому полю
+            InputText.Text = string.Empty; // Очищение верхнего текстового поля
         }
     }
 }

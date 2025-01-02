@@ -25,8 +25,8 @@ namespace TaskNo4
 			int currentYear = 2024;
 
 			for (int i = 0; i < _years.Length; ++i)
-				_years[i] = currentYear--;
-
+				_years[i] = currentYear--; // Заполняем все года в обратном порядке
+			// Заполняем месяца
 			_months[0] = "Январь";
 			_months[1] = "Февраль";
 			_months[2] = "Март";
@@ -39,20 +39,20 @@ namespace TaskNo4
 			_months[9] = "Октябрь";
 			_months[10] = "Ноябрь";
 			_months[11] = "Декабрь";
-
+			// Заполняем все возможные дни в месяце
 			for (int i = 0; i < _days.Length; ++i)
 				_days[i] = i + 1;
 
 			InitializeComponent();
-
+			// Присваеваем Combobox-ам определенные массивы
 			YearChoise.ItemsSource = _years;
 			MonthChoise.ItemsSource = _months;
 			DayChoise.ItemsSource = _days;
 		}
-
+		// Функция для вычисления високосного года
 		private static bool IsLeapYear(int year)
 			=> (year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0));
-
+		// Вычисление дней для фервраля
 		private void EvaluateFebruaryDays()
 		{
 			if (_chosenData.Item2 == 2 && IsLeapYear(_chosenData.Item1))
@@ -60,7 +60,7 @@ namespace TaskNo4
 			else if (_chosenData.Item2 == 2)
 				DayChoise.ItemsSource = _days.Where(d => d <= 28);
 		}
-
+		// Поведение при выборе года
 		private void YearChoise_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			DayChoise.ItemsSource = _days;
@@ -68,8 +68,8 @@ namespace TaskNo4
 			_isYearChosen = true;
 			EvaluateFebruaryDays();
 		}
-
-		private void MonthChoise_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        // Поведение при выборе месяца
+        private void MonthChoise_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			DayChoise.ItemsSource = _days;
 			string month = (string)(sender as ComboBox)!.SelectedItem;
@@ -92,16 +92,16 @@ namespace TaskNo4
 			};
 
 			EvaluateFebruaryDays();
-
+			// Для определенных месяцев ставим 30 дней
 			if (_chosenData.Item2 == 4 ||
 				_chosenData.Item2 == 6 ||
 				_chosenData.Item2 == 9 ||
 				_chosenData.Item2 == 11)
 				DayChoise.ItemsSource = _days.Where(d => d <= 30);
 
-			if (_isYearChosen) DayChoise.IsEnabled = true;
+			if (_isYearChosen) DayChoise.IsEnabled = true;// Ставим возможность выбрать день
 		}
-
+		// Обработка поведения выбора дня
 		private void DayChoise_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			_chosenData.Item3 = (int)(sender as ComboBox)!.SelectedItem;
