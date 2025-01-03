@@ -15,8 +15,8 @@ namespace Lab_No5_Client
         private const int MAX_DATA_LENGTH = 512;
 		private const char DELIMETER = '$';
 
-		private readonly IPEndPoint _endPoint;
-		private readonly Socket _socket;
+		private IPEndPoint _endPoint;
+		private Socket _socket;
 
 		private byte[] _sentData;
 
@@ -46,8 +46,11 @@ namespace Lab_No5_Client
 
 					return;
 				}
+                _endPoint = new(IPAddress.Parse(IP_ADDRESS), PORT);
+                _socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                _sentData = new byte[MAX_DATA_LENGTH];
 
-				string username = UserNameField.Text;
+                string username = UserNameField.Text;
 				string message = MessageField.Text;
 
 				ServerResponse.Text = string.Empty;
@@ -58,8 +61,8 @@ namespace Lab_No5_Client
 				finalDataString.Append(message); // Добавляем само сообщение
 
 				_sentData = Encoding.UTF8.GetBytes(finalDataString.ToString());
-				_socket.Connect(_endPoint); // Подключаемся к порту локалхоста
-				_socket.Send(_sentData); // Отправляем сообщение на порт
+                _socket.Connect(_endPoint); // Подключаемся к порту локалхоста
+                _socket.Send(_sentData); // Отправляем сообщение на порт
 
 				StringBuilder responseData = new();
 				byte[] data = new byte[MAX_DATA_LENGTH];
