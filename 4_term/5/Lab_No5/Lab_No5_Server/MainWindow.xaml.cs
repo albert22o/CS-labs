@@ -63,14 +63,14 @@ namespace Lab_No5_Server
 						int delimeterIndex = requestDataInStr.IndexOf(DELIMETER);
 						string username = requestData.ToString()[..delimeterIndex];
 						string message = requestData.ToString()[(delimeterIndex + 1)..];
-						Dispatcher.BeginInvoke(() => RequestList.Items.Add($"Клиент {username} отправил {message}."));
+						Dispatcher.BeginInvoke(() => RequestList.Items.Add($"Сообщение {message} получено от {username}."));
 						reversedMessage = Reverse(message);
 					}
 					while (listener.Available > 0);
 
 					listener.Send(Encoding.UTF8.GetBytes(reversedMessage));
 					listener.Shutdown(SocketShutdown.Both);
-					Dispatcher.BeginInvoke(() => RequestList.Items.Add($"Запрос обработан!"));
+					Dispatcher.BeginInvoke(() => RequestList.Items.Add($"Отправляю ответ {reversedMessage}"));
 				}
 				catch (Exception ex)
 				{

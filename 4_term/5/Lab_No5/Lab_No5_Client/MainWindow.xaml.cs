@@ -10,9 +10,9 @@ namespace Lab_No5_Client
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		private const string IP_ADDRESS = "127.0.0.1";
-		private const int PORT = 7000;
-		private const int MAX_DATA_LENGTH = 512;
+		private const string IP_ADDRESS = "127.0.0.1";// Локальный адресс нашего ПК
+        private const int PORT = 7000;// Порт для подключения
+        private const int MAX_DATA_LENGTH = 512;
 		private const char DELIMETER = '$';
 
 		private readonly IPEndPoint _endPoint;
@@ -29,8 +29,8 @@ namespace Lab_No5_Client
 			InitializeComponent();
 		}
 
-		~MainWindow()
-		{
+		~MainWindow()// Деструктор для закрытия сокета при выходк из приложения
+        {
 			_socket.Shutdown(SocketShutdown.Both);
 			_socket.Close();
 			_socket.Dispose();
@@ -53,13 +53,13 @@ namespace Lab_No5_Client
 				ServerResponse.Text = string.Empty;
 
 				StringBuilder finalDataString = new();
-				finalDataString.Append(username);
-				finalDataString.Append(DELIMETER);
-				finalDataString.Append(message);
+				finalDataString.Append(username); // Добавляем имя того, кто отправил сообщение
+				finalDataString.Append(DELIMETER); // Добавляем разделитель
+				finalDataString.Append(message); // Добавляем само сообщение
 
 				_sentData = Encoding.UTF8.GetBytes(finalDataString.ToString());
-				_socket.Connect(_endPoint);
-				_socket.Send(_sentData);
+				_socket.Connect(_endPoint); // Подключаемся к порту локалхоста
+				_socket.Send(_sentData); // Отправляем сообщение на порт
 
 				StringBuilder responseData = new();
 				byte[] data = new byte[MAX_DATA_LENGTH];
@@ -67,10 +67,10 @@ namespace Lab_No5_Client
 
 				do
 				{
-					responseDataSize = _socket.Receive(data);
-					responseData.Append(Encoding.UTF8.GetString(data, 0, responseDataSize));
+					responseDataSize = _socket.Receive(data);// Записываем ответ сервера
+					responseData.Append(Encoding.UTF8.GetString(data, 0, responseDataSize));// Выводим ответ сервера
 				}
-				while (_socket.Available > 0);
+				while (_socket.Available > 0);// Ждем ответа от сервера
 
 				ServerResponse.Text = responseData.ToString();
 				_socket.Shutdown(SocketShutdown.Both);
